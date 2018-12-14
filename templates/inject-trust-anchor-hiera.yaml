@@ -1,0 +1,30 @@
+# *******************************************************************
+# This file was created automatically by the sample environment
+# generator. Developers should use `tox -e genconfig` to update it.
+# Users are recommended to make changes to a copy of the file instead
+# of the original, if any customizations are needed.
+# *******************************************************************
+# title: Inject SSL Trust Anchor on Overcloud Nodes
+# description: |
+#   When using an SSL certificate signed by a CA that is not in the default
+#   list of CAs, this environment allows adding a custom CA certificate to
+#   the overcloud nodes.
+parameter_defaults:
+  # Map containing the CA certs and information needed for deploying them.
+  # Type: json
+  CAMap:
+    overcloud-ca: |
+      content:
+        -----BEGIN RSA PRIVATE KEY-----
+        MIIJKAIBAAKCAgEA2nSdJ1cXPuVf24R/APPeE7Mcld8xE2+yiDr+VVR6H8/r+wW7
+        ...
+        piskLtdo3xF6lkfKXygR15JuikoUmzdrl0q9wcHsYm2GbF+OMxjuLohaGdA=
+        -----END RSA PRIVATE KEY-----
+    undercloud-ca:
+      content: |
+        -----BEGIN CERTIFICATE-----
+        MIIDjTCCAnWgAwIBAgIQR52kPVPNRdGTFSvxllbUJTANBgkqhkiG9w0BAQsFADBQ
+        ...
+        5jYLbjj4u7aKmAxiheAL4qU3FXwfQSbOeOiTyi8bYH03k4G8iYtla+hhEIqAs0Cu
+        dQ==
+        -----END CERTIFICATE-----

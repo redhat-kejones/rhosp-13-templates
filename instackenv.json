@@ -1,0 +1,69 @@
+{
+    "arch": "x86_64",
+    "nodes": [
+        {
+            "capabilities": "profile:control",
+            "name": "node1",
+            "pm_addr": "192.0.2.1",
+            "pm_password": "ADMIN",
+            "pm_type": "pxe_ipmitool",
+            "pm_user": "ADMIN"
+        },
+        {
+            "capabilities": "profile:control",
+            "name": "node2",
+            "pm_addr": "192.0.2.2",
+            "pm_password": "ADMIN",
+            "pm_type": "pxe_ipmitool",
+            "pm_user": "ADMIN"
+        },
+        {
+            "capabilities": "profile:control",
+            "name": "node3",
+            "pm_addr": "192.0.2.3",
+            "pm_password": "ADMIN",
+            "pm_type": "pxe_ipmitool",
+            "pm_user": "ADMIN"
+        },
+        {
+            "capabilities": "profile:compute",
+            "name": "node4",
+            "pm_addr": "192.0.2.4",
+            "pm_password": "ADMIN",
+            "pm_type": "pxe_ipmitool",
+            "pm_user": "ADMIN"
+        },
+        {
+            "capabilities": "profile:compute",
+            "name": "node5",
+            "pm_addr": "192.0.2.5",
+            "pm_password": "ADMIN",
+            "pm_type": "pxe_ipmitool",
+            "pm_user": "ADMIN"
+        },
+        {
+            "capabilities": "profile:ceph-storage",
+            "name": "node6",
+            "pm_addr": "192.0.2.6",
+            "pm_password": "ADMIN",
+            "pm_type": "pxe_ipmitool",
+            "pm_user": "ADMIN"
+        },
+        {
+            "capabilities": "profile:ceph-storage",
+            "name": "node7",
+            "pm_addr": "192.0.2.7",
+            "pm_password": "ADMIN",
+            "pm_type": "pxe_ipmitool",
+            "pm_user": "ADMIN"
+        },
+        {
+            "capabilities": "profile:ceph-storage",
+            "name": "node8",
+            "pm_addr": "192.0.2.8",
+            "pm_password": "ADMIN",
+            "pm_type": "pxe_ipmitool",
+            "pm_user": "ADMIN"
+        }
+    ]
+}

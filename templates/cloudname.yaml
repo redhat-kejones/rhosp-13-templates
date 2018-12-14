@@ -1,0 +1,4 @@
+parameter_defaults:
+  CloudName: openstack.example.com
+  CloudDomain: example.com
+  DnsServers: ["192.0.2.4"]
